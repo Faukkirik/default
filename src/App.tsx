@@ -19,7 +19,7 @@ function App() {
             Article 1
             <Rating value={3}/>*/}
             {/*<Accordion titleValue={"Menu"} collapsed={true}/>*/}
-            <Accordion titleValue={"Users"} collapsed={accordionCollapsed} onClick={setAccordionCollapsed}/>
+            <Accordion titleValue={"Users"} collapsed={accordionCollapsed} onClick={setAccordionCollapsed} onClicks={()=>{console.log("App rendering")}} items={[{title:"Dimych", value: 1}, {title:"lil scrip", value: 2}, {title:"rock'n'roll", value: 3}]}/>
             {/*Article 2
             <Rating value={4}/>
             Score...*/}
